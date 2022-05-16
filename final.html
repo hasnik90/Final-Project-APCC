@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <style>
+      th,td {
+          border: 1px solid rgb(80,80,80);
+          padding: 3px;
+         }
+      <table style="width: 50%"> {
+         border-collapse: collapse;
+            }
+      table.center {
+         margin-left: auto;
+         margin-right: auto;
+                   }
+  </style>
+        <head>
+             <meta charset="utf-8">
+        </head>
+        <body>
+             <h1 style="font-size:30px", "font-family:Times New Roman"> Pathogenic variant prediction </h1>
+             <table>
+               <tr style= "height: 40px">
+                   <th>SNP_ID</th>
+                   <th>Alelle</th>
+                   <th>Consequence</th>
+                   <th>Impact</th>
+                   <th>Symbol</th>
+                   <th>Gene</th>
+                   <th>Feature_type</th>
+                   <th>Feature</th>
+                   <th>Biotype</th>
+                   <th>HGVSc</th>
+                   <th>HGVSp</th>
+                   <th>cDNA_position</th>
+                   <th>CDS_position</th>
+                   <th>Protein_position</th>
+                   <th>Amino_acids</th>
+                   <th>Codons</th>
+                   <th>Existing_variation</th>
+                   <th>Distance</th>
+                   <th>Strand</th>
+                   <th>Flags</th>
+                   <th>Symbol_source</th>
+                   <th>HGNC_ID</th>
+                   <th>Canonical</th>
+                   <th>SIFT</th>
+                   <th>Polyphen</th>
+                   <th>Domains</th>
+                   <th>genomAD_AF</th>
+                   <th>genomAD_filtered</th>
+                   <th>CLIN_SIG</th>
+                   <th>Phenotypes</th>
+                   <th>Condel</th>
+                   <th>Ancestral_allele</th>
+                   <th>Clinvar_clinsig</th>
+                   <th>Clinvar_rs</th>
+                   <th>NF_filter</th>
+                   <th>Depth</th>
+                   <th>HOMO</th>
+                   <th>HETERO</th>
+               </tr>
+                  {%for dict in List%}
+                   <tr>
+                     {%for key,value in dict.items()%}
+                       <td> {{value}} </td>
+                     {%endfor%}
+                   </tr>
+                   {%endfor%}
+             </table>
+        </body>
+ </html>
