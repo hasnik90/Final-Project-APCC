@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <title>Pathogenic variant detection</title>
+</head>
+
+<body id="home">
+         <h1>Pre-conception carrier screening tool for Whole Exome Sequencing data</h1>
+         <form name='pathogenic_variant_detection' method='post' action='./PCS_pred.cgi' enctype="multipart/form-data">
+               <label for="file">Select files :</label>
+               <input type="file"  id="file1"  name="file1">
+               <input type="file"  id="file2"  name="file2">
+               <input type="submit" value="Submit">
+
+
+<p> Input text files have to be in tab-delimited(.txt) form with 38 columns as specified in README.The Input file is an edited VEP annotated tab-delimited output of the GATK VCF files containing Whole Exome sequencing data. More information about the VEP fields used to annotate the VCF file can be found from the link below.
+
+          <a href="https://useast.ensembl.org/info/docs/tools/vep/vep_formats.html">Visit Ensembl.org Variant Effect Predictor</a>
+</p>
+
+
+         </form>
+</body>
+</html>
