@@ -2,8 +2,10 @@ This program generates potential pathogenic variant/s from Next Generation Seque
 
 The input file has to be in tab separated values(tsv) format, converted from a GATK output variant call format(vcf) file annotated with ANNOVAR, VEP, SnpEff or similar tool with mandatory fields as described below, prior to using this tool.
 HTML/CSS form is presented to the user for the input tsv file. Once the file is submitted, an SQL table is created in the MySQL server, and python-based CGI script importes content of the file in to the table. A pre-established filter startegy in the form of 
-sql queries in the CGI script is performed the quesries on the newly imported table. The resulting output or the potential pathogenic variant/s from the input file, is then transferred as a data structure such as list of dictionaries to a HTML/CSS form for user 
+SQL queries in the CGI script is performed the quesries on the newly imported table. The resulting output or the potential pathogenic variant/s from the input file, is then transferred as a data structure such as list of dictionaries to a HTML/CSS form for user 
 visualization. 
+
+The credential for Mysql server in PCS_pred.cgi are currently not in use. User must add their own credentials to their own MySQL server.
 
 The mandatory fields in the tsv input that are filtered in the tool
 
