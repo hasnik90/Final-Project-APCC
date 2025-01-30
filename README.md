@@ -5,7 +5,7 @@ HTML/CSS form is presented to the user for the input tsv file. Once the file is 
 SQL queries in the CGI script is performed the quesries on the newly imported table. The resulting output or the potential pathogenic variant/s from the input file, is then transferred as a data structure such as list of dictionaries to a HTML/CSS form for user 
 visualization. 
 
-The credential for Mysql server in PCS_pred.cgi are currently not in use. User must add their own credentials to their own MySQL server.
+The credential for MySQL server in PCS_pred.cgi are currently not in use. User must add their own credentials to their own MySQL server.
 
 The mandatory fields in the tsv input that are filtered in the tool
 
