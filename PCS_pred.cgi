@@ -17,6 +17,7 @@ templateLoader = jinja2.FileSystemLoader( searchpath="/var/www/html/hkannan2/fin
 env = jinja2.Environment(loader=templateLoader)
 template = env.get_template('final.html')
 
+#add your own credentials to a MySQL server
 #create the cursor object, If the tables exist remove all of them prior to creating tables for new sample files.Create a table with  column number, names and data types as below for the  input file
 try:
   conn = mysql.connect(user='hkannan2',password='Ihatemysql1990!',host='localhost',database='hkannan2')
